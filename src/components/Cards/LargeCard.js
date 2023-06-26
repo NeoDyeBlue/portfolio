@@ -14,7 +14,7 @@ export default function LargeCard({
       <Image
         src={image}
         alt="project image"
-        className="h-auto w-full rounded-[20px] border border-gray-400"
+        className="h-auto w-full rounded-[20px] border border-gray-300 dark:border-gray-900"
       />
       <div className="flex flex-wrap gap-2">
         {techs.map((tech, index) => (

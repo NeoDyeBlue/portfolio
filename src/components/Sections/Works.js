@@ -10,20 +10,20 @@ export default function Works() {
       description: "An online bartering system",
       image: eBarterYanPic,
       link: "https://ebarteryan.onrender.com",
-      techs: ["React", "Next.js", "Tailwind", "MongoDB"],
+      techs: ["React", "Next.js", "Tailwindcss", "MongoDB"],
     },
     {
       name: "Quick Lottery",
       description: "A retro styled lottery with websocket",
       image: quickLotteryPic,
-      link: "https://ebarteryan.onrender.com",
+      link: "https://quicklottery.neodyeblue.repl.co/",
       techs: ["React", "Next.js", "CSS/SCSS"],
     },
     {
       name: "Simply Weather",
       description: "Display current weather on a location with visualization",
       image: simplyWeatherPic,
-      link: "https://ebarteryan.onrender.com",
+      link: "https://openweather-api-simple-weather-app.neodyeblue.repl.co/",
       techs: ["HTML", "CSS/SCSS", "JavaScript"],
     },
   ];
@@ -40,7 +40,7 @@ export default function Works() {
   ));
 
   return (
-    <div id="works" className="flex flex-col gap-10">
+    <div id="works" className="flex scroll-pt-6 flex-col gap-10">
       <div className="flex flex-col gap-10 md:gap-20">{largeCards}</div>
     </div>
   );

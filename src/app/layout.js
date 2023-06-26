@@ -23,6 +23,7 @@ const openSans = Open_Sans({
   weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
 });
+import Link from "next/link";
 
 export const metadata = {
   title: "Create Next App",
@@ -39,25 +40,35 @@ export default function RootLayout({ children }) {
               className="top-0 flex w-full max-w-[480px] flex-col gap-4 md:sticky 
               md:h-screen md:justify-between md:py-12"
             >
-              <Navbar />
-              <div className="flex flex-col gap-4">
-                <div className="flex flex-col font-display text-6xl font-extrabold uppercase leading-none tracking-tight">
-                  <p className="max-w-[40vw] text-cerulean-blue-500">
-                    John Paul
+              <div className="flex flex-col gap-8">
+                <Navbar />
+                <div className="flex flex-col gap-4">
+                  <div className="flex flex-col font-display text-6xl font-extrabold uppercase leading-none tracking-tight">
+                    <p className="max-w-[40vw] text-cerulean-blue-500">
+                      John Paul
+                    </p>
+                    <p>Zoleta</p>
+                  </div>
+                  <p className="font-display text-3xl font-bold">
+                    Web Developer
                   </p>
-                  <p>Zoleta</p>
                 </div>
-                <p className="font-display text-3xl font-bold">Web Developer</p>
               </div>
               <ul className="hidden flex-col gap-4 uppercase md:flex">
                 <li>
-                  <p>About</p>
+                  <Link href={"#about"} className="hover:underline">
+                    <p>About</p>
+                  </Link>
                 </li>
                 <li>
-                  <p>Works</p>
+                  <Link href={"#works"} className="hover:underline">
+                    <p>Works</p>
+                  </Link>
                 </li>
                 <li>
-                  <p>Contact</p>
+                  <Link href={"#contact"} className="hover:underline">
+                    <p>Contact</p>
+                  </Link>
                 </li>
               </ul>
               <div
