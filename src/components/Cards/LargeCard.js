@@ -23,10 +23,8 @@ export default function LargeCard({
       </div>
       <div className="flex justify-between gap-4">
         <div className="flex flex-col gap-1">
-          <p className="font-display text-3xl font-bold tracking-tight">
-            {name}
-          </p>
-          <p>{description}</p>
+          <p className="font-display text-3xl font-bold">{name}</p>
+          <p className="leading-7">{description}</p>
         </div>
         <CircleLinkButton link={link} size={60} />
       </div>

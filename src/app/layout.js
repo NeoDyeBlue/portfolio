@@ -34,8 +34,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Providers>
         <body className={classNames(openSans.variable, raleway.variable)}>
-          <main className="flex flex-col gap-10 p-6">
-            <div>
+          <main className="mx-auto flex flex-col gap-10 p-6 md:flex-row md:gap-20 md:px-12 md:py-0">
+            <div
+              className="top-0 flex w-full max-w-[480px] flex-col gap-4 md:sticky 
+              md:h-screen md:justify-between md:py-12"
+            >
               <Navbar />
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col font-display text-6xl font-extrabold uppercase leading-none tracking-tight">
@@ -44,10 +47,19 @@ export default function RootLayout({ children }) {
                   </p>
                   <p>Zoleta</p>
                 </div>
-                <p className="font-display text-3xl font-bold tracking-tight">
-                  Web Developer
-                </p>
+                <p className="font-display text-3xl font-bold">Web Developer</p>
               </div>
+              <ul className="hidden flex-col gap-4 uppercase md:flex">
+                <li>
+                  <p>About</p>
+                </li>
+                <li>
+                  <p>Works</p>
+                </li>
+                <li>
+                  <p>Contact</p>
+                </li>
+              </ul>
               <div
                 className="mt-10 flex h-[44px] w-fit items-center gap-6
               rounded-full bg-black px-6 text-white dark:bg-white dark:text-black"
@@ -59,7 +71,6 @@ export default function RootLayout({ children }) {
                 <AiFillFileText size={20} />
               </div>
             </div>
-            <hr className="w-full rounded-full bg-gray-400" />
             {children}
           </main>
         </body>

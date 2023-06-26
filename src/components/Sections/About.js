@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <div>
-      <div className="flex flex-col gap-6">
+    <div id="about" className="flex gap-6">
+      <div className="flex flex-col gap-6 leading-7">
         <p>
           Hi there, I&apos;m John Paul Zoleta a passionate web designer and
           developer. During my early years in Computer Science, I practiced
@@ -16,6 +16,10 @@ export default function About() {
           free time and contemplate my life choices.
         </p>
       </div>
+      <div
+        className="hidden aspect-square h-full max-h-[400px] min-h-[250px] w-full 
+        min-w-[250px] max-w-[400px] rounded-[20px] bg-gray-100 dark:bg-gray-900 md:block"
+      ></div>
     </div>
   );
 }

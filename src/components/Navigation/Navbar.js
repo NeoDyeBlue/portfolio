@@ -14,7 +14,7 @@ export default function Navigation() {
   }
 
   return (
-    <div className="fixed left-0 top-0 flex w-full justify-end gap-10 p-6">
+    <div className="fixed left-0 top-0 flex w-full justify-end gap-10 p-6 md:relative md:justify-start md:p-0">
       <div
         className={classNames(
           `relative z-10 flex w-fit flex-col items-center
@@ -23,10 +23,10 @@ export default function Navigation() {
         )}
       >
         <div className="flex items-center gap-2">
-          <div className="">
+          <div className="md:hidden">
             <MenuButton isOpen={isMenuOpen} onClick={handleMenuClick} />
           </div>
-          <div className="h-[32px] w-[1px] bg-white dark:bg-black" />
+          <div className="h-[32px] w-[1px] bg-white dark:bg-black md:hidden" />
           <ThemeToggle />
         </div>
       </div>
@@ -42,7 +42,7 @@ export default function Navigation() {
               bounce: 0,
               // duration: 2,
             }}
-            className="fixed left-0 top-0 w-full rounded-b-[20px] bg-black p-6 dark:bg-white"
+            className="fixed left-0 top-0 w-full rounded-b-[20px] bg-black p-6 dark:bg-white md:hidden"
           >
             <p className="flex h-[48px] items-center font-display text-3xl font-bold text-white dark:text-black">
               Menu
@@ -55,10 +55,9 @@ export default function Navigation() {
                 pt-6 text-white dark:text-black`
               )}
             >
-              <MenuItem text="Home" />
-              <MenuItem text="About" />
-              <MenuItem text="Works" />
-              <MenuItem text="Contact" />
+              <MenuItem text="About" link="#about" />
+              <MenuItem text="Works" link="#works" />
+              <MenuItem text="Contact" link="#contact" />
             </ul>
           </motion.div>
         )}

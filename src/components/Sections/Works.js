@@ -1,5 +1,7 @@
 import { LargeCard } from "../Cards";
 import eBarterYanPic from "../../../public/project_images/ebarteryan.png";
+import quickLotteryPic from "../../../public/project_images/quick-lottery.png";
+import simplyWeatherPic from "../../../public/project_images/simply-weather.png";
 
 export default function Works() {
   const mainProjects = [
@@ -8,7 +10,21 @@ export default function Works() {
       description: "An online bartering system",
       image: eBarterYanPic,
       link: "https://ebarteryan.onrender.com",
-      techs: ["React", "Next.js", "MongoDB"],
+      techs: ["React", "Next.js", "Tailwind", "MongoDB"],
+    },
+    {
+      name: "Quick Lottery",
+      description: "A retro styled lottery with websocket",
+      image: quickLotteryPic,
+      link: "https://ebarteryan.onrender.com",
+      techs: ["React", "Next.js", "CSS/SCSS"],
+    },
+    {
+      name: "Simply Weather",
+      description: "Display current weather on a location with visualization",
+      image: simplyWeatherPic,
+      link: "https://ebarteryan.onrender.com",
+      techs: ["HTML", "CSS/SCSS", "JavaScript"],
     },
   ];
 
@@ -24,8 +40,8 @@ export default function Works() {
   ));
 
   return (
-    <div className="flex flex-col gap-10">
-      <div className="flex flex-col gap-6">{largeCards}</div>
+    <div id="works" className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 md:gap-20">{largeCards}</div>
     </div>
   );
 }
