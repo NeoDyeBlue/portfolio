@@ -1,10 +1,8 @@
 "use client";
 
 import { Canvas } from "@react-three/fiber";
-import { motion as motion3d } from "framer-motion-3d";
 import { Environment, OrbitControls } from "@react-three/drei";
 import { JPText } from "../3dModels";
-import { useState } from "react";
 
 export default function About() {
   return (
@@ -23,9 +21,9 @@ export default function About() {
           for creating responsive and neat websites.
         </p>
         <p>
-          I usually do my exhausting but fun grind in{" "}
+          I am a nature lover and I usually do my exhausting but fun grind in{" "}
           <span className="font-bold italic">Genshin Impact</span> during my
-          free time and contemplate my life choices.
+          free time.
         </p>
       </div>
       <div

@@ -49,7 +49,7 @@ export default function JPText(props) {
             ref={modelRef}
             castShadow
             receiveShadow
-            scale={2.25}
+            scale={2.2}
             geometry={nodes.Text.geometry}
             material={materials["Material.002"]}
             position={[0, 0, 0]}
