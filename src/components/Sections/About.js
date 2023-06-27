@@ -10,7 +10,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="flex flex-col-reverse gap-4 lg:flex-row lg:gap-8"
+      className="flex flex-col-reverse gap-4 md:pt-12 lg:flex-row lg:gap-8"
     >
       <div className="flex flex-col gap-6 leading-7">
         <p>

@@ -40,7 +40,7 @@ export default function Works() {
   ));
 
   return (
-    <div id="works" className="flex scroll-pt-6 flex-col gap-10">
+    <div id="works" className="flex flex-col gap-10 md:py-12">
       <div className="flex flex-col gap-10 md:gap-20">{largeCards}</div>
     </div>
   );

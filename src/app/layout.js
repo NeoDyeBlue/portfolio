@@ -3,6 +3,7 @@ import { Raleway, Open_Sans } from "next/font/google";
 import classNames from "classnames";
 import { Navbar } from "@/components/Navigation";
 import Providers from "@/components/Providers";
+import { IconContactLink } from "@/components/Buttons";
 import {
   AiFillFacebook,
   AiFillLinkedin,
@@ -75,11 +76,26 @@ export default function RootLayout({ children }) {
                 className="mt-10 flex h-[44px] w-fit items-center gap-6
               rounded-full bg-black px-6 text-white dark:bg-white dark:text-black"
               >
-                <AiFillFacebook size={20} />
-                <AiFillGithub size={20} />
-                <AiFillLinkedin size={20} />
-                <AiFillMail size={20} />
-                <AiFillFileText size={20} />
+                <IconContactLink
+                  link="https://facebook.com/neodyeblue"
+                  icon={<AiFillFacebook size={20} />}
+                />
+                <IconContactLink
+                  link="https://github.com/neodyeblue"
+                  icon={<AiFillGithub size={20} />}
+                />
+                <IconContactLink
+                  link="https://www.linkedin.com/in/john-paul-zoleta-63a476261/"
+                  icon={<AiFillLinkedin size={20} />}
+                />
+                <IconContactLink
+                  link="mailto:jhnplzoleta@gmail.com"
+                  icon={<AiFillMail size={20} />}
+                />
+                <IconContactLink
+                  link="John_Paul_Zoleta-Resume.pdf"
+                  icon={<AiFillFileText size={20} />}
+                />
               </div>
             </div>
             {children}

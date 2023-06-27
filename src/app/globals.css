@@ -27,7 +27,10 @@ body {
 } */
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
   body {
-    @apply font-body dark:bg-black;
+    @apply scroll-smooth font-body selection:bg-cerulean-blue-500 selection:text-white dark:bg-black;
   }
 }
