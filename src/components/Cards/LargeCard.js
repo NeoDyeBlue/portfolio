@@ -1,6 +1,7 @@
 import Image from "next/image";
 import TechBadge from "../TechBadge";
 import { CircleLinkButton } from "../Buttons";
+import Link from "next/link";
 
 export default function LargeCard({
   name = "",
@@ -11,15 +12,18 @@ export default function LargeCard({
 }) {
   return (
     <div className="flex flex-col gap-4">
-      <div>
+      <Link
+        href={link}
+        className="dark:border-gray-90 overflow-hidden rounded-[20px] border border-gray-300"
+      >
         <Image
           src={image}
           alt="project image"
           width={500}
           height={250}
-          className="h-auto w-full rounded-[20px] border border-gray-300 dark:border-gray-900"
+          className="h-auto w-full transition-transform hover:scale-[1.05]"
         />
-      </div>
+      </Link>
       <div className="flex flex-wrap gap-2">
         {techs.map((tech, index) => (
           <TechBadge key={index} text={tech} />
