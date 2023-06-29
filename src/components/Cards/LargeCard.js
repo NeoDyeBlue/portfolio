@@ -14,14 +14,15 @@ export default function LargeCard({
     <div className="flex flex-col gap-4">
       <Link
         href={link}
-        className="dark:border-gray-90 overflow-hidden rounded-[20px] border border-gray-300"
+        className="relative overflow-hidden rounded-[20px] border border-gray-300 dark:border-gray-900"
       >
         <Image
           src={image}
           alt="project image"
-          width={500}
-          height={250}
-          className="h-auto w-full transition-transform hover:scale-[1.05]"
+          width={1500}
+          height={1500}
+          className="h-auto w-full object-cover transition-transform hover:scale-[1.05]"
+          // fill
         />
       </Link>
       <div className="flex flex-wrap gap-2">
