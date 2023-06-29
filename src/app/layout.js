@@ -57,17 +57,17 @@ export default function RootLayout({ children }) {
               </div>
               <ul className="hidden flex-col gap-4 uppercase md:flex">
                 <li>
-                  <Link href={"#about"} className="hover:underline">
+                  <Link href={"#about"} className="w-fit hover:underline">
                     <p>About</p>
                   </Link>
                 </li>
                 <li>
-                  <Link href={"#works"} className="hover:underline">
+                  <Link href={"#works"} className="w-fit hover:underline">
                     <p>Works</p>
                   </Link>
                 </li>
                 <li>
-                  <Link href={"#contact"} className="hover:underline">
+                  <Link href={"#contact"} className="w-fit hover:underline">
                     <p>Contact</p>
                   </Link>
                 </li>

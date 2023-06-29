@@ -11,11 +11,15 @@ export default function LargeCard({
 }) {
   return (
     <div className="flex flex-col gap-4">
-      <Image
-        src={image}
-        alt="project image"
-        className="h-auto w-full rounded-[20px] border border-gray-300 dark:border-gray-900"
-      />
+      <div>
+        <Image
+          src={image}
+          alt="project image"
+          width={500}
+          height={250}
+          className="h-auto w-full rounded-[20px] border border-gray-300 dark:border-gray-900"
+        />
+      </div>
       <div className="flex flex-wrap gap-2">
         {techs.map((tech, index) => (
           <TechBadge key={index} text={tech} />
