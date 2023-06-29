@@ -17,7 +17,7 @@ export default function About() {
           through game development and static web pages. I also gained
           experience from an internship and other projects. Now I&apos;m focused
           on <span className="font-bold">React</span> and{" "}
-          <span className="font-bold">Next.js</span>
+          <span className="font-bold">Next.js</span>{" "}
           for creating responsive and neat websites.
         </p>
         <p>
