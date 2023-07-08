@@ -10,15 +10,15 @@ export default function About() {
       id="about"
       className="flex flex-col-reverse gap-4 md:pt-12 lg:flex-row lg:gap-8"
     >
-      <div className="flex flex-col gap-6 leading-7">
+      <div className="flex h-full w-full flex-col gap-6 leading-7">
         <p>
           Hi there, I&apos;m John Paul Zoleta a passionate web developer. During
           my early years in Computer Science, I practiced coding and designing
           through game development and static web pages. I also gained
           experience from an internship and other projects. Now I&apos;m focused
           on <span className="font-bold">React</span> and{" "}
-          <span className="font-bold">Next.js</span>{" "}
-          for creating responsive and neat websites.
+          <span className="font-bold">Next.js</span> for creating responsive and
+          neat websites.
         </p>
         <p>
           I am a nature lover and I usually do my exhausting but fun grind in{" "}
@@ -27,8 +27,8 @@ export default function About() {
         </p>
       </div>
       <div
-        className="aspect-square h-full max-h-[200px] w-full max-w-[200px] 
-        md:max-h-[420px] md:max-w-[420px]"
+        className="aspect-square h-full max-h-[240px] w-full max-w-[240px] 
+        xl:max-h-[320px] xl:max-w-[320px]"
       >
         <Canvas className="h-full w-full">
           {/* <ambientLight intensity={0.1} /> */}

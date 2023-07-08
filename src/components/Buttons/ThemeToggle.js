@@ -39,7 +39,7 @@ export default function ThemeToggle() {
           ) : (
             <MdOutlineLightMode
               size={20}
-              className={classNames("text-ship-gray-950")}
+              className={classNames("text-black")}
             />
           )}
         </span>

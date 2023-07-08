@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1024"
+   height="768"
+   viewBox="0 0 270.93333 203.2"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="gradient.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.55729167"
+     inkscape:cx="512.29907"
+     inkscape:cy="241.34579"
+     inkscape:window-width="1366"
+     inkscape:window-height="697"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg874" />
+  <defs
+     id="defs2">
+    <radialGradient
+       id="b"
+       cx="231.50344"
+       cy="271.56517"
+       r="177.30666"
+       fx="309.51838"
+       fy="172.27343"
+       gradientTransform="matrix(1.0025672,0,0,0.9974394,-0.89719627,-36.785047)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#3066be"
+         id="stop860" />
+      <stop
+         offset="100%"
+         stop-color="rgba(101,48,190,0.2)"
+         id="stop862" />
+    </radialGradient>
+    <filter
+       id="a"
+       x="-500"
+       y="-500"
+       width="2000"
+       height="2000"
+       filterUnits="userSpaceOnUse">
+      <feGaussianBlur
+         in="SourceGraphic"
+         stdDeviation="100"
+         id="feGaussianBlur865" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g912"
+       transform="matrix(0.26458333,0,0,0.26458333,46.220483,-38.287927)">
+      <g
+         filter="url(#a)"
+         id="g876"
+         transform="translate(174.05608,-165.08411)">
+        <svg
+           width="1000"
+           height="1000"
+           viewBox="0 0 500 500"
+           opacity="0.65"
+           version="1.1"
+           id="svg874">
+          <path
+             fill="url(#b)"
+             d="m 398.6028,319.21495 q -27.5,106 -140,89.5 -112.5,-16.5 -174.999996,-106 -62.5,-89.5 4.5,-170.5 Q 155.1028,51.214953 245.1028,57.714953 q 90,6.5 135.5,80.999997 45.5,74.5 18,180.5 z"
+             id="path872"
+             style="fill:url(#b)" />
+        </svg>
+      </g>
+    </g>
+  </g>
+</svg>

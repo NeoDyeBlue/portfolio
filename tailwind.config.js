@@ -16,6 +16,14 @@ module.exports = {
         display: ["var(--font-raleway)"],
         body: ["var(--font-open-sans)"],
       },
+      backgroundImage: {
+        "gradient-radial":
+          "radial-gradient(circle, rgba(48,102,190,1) 0%, rgba(0,0,0,0) 50%)",
+      },
+      shadow: {
+        simple:
+          "rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px",
+      },
       colors: {
         "ship-gray": {
           50: "#f7f7f8",

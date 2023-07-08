@@ -19,7 +19,7 @@ export default function Navigation() {
         className={classNames(
           `relative z-10 flex w-fit flex-col items-center
            rounded-full bg-black p-2
-        text-white dark:bg-white dark:text-black`
+        text-white dark:bg-white  dark:text-black`
         )}
       >
         <div className="flex items-center gap-2">

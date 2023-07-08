@@ -34,3 +34,12 @@ body {
     @apply scroll-smooth font-body selection:bg-cerulean-blue-500 selection:text-white dark:bg-black;
   }
 }
+
+.radial-background {
+  background-image: radial-gradient(
+    circle,
+    rgba(48, 102, 190, 1) 0%,
+    rgba(0, 0, 0, 0) 25%
+  );
+  background-position: top right;
+}

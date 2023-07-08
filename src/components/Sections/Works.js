@@ -22,6 +22,7 @@ export default function Works() {
       name={project.name}
       description={project.description}
       image={project.mainImage}
+      otherImages={project.images}
       link={project.link}
       techs={project.techs}
     />
