@@ -82,7 +82,7 @@ export default function RootLayout({ children }) {
               </ul>
               <div
                 className="mt-10 flex h-[44px] w-fit items-center gap-6
-              rounded-full bg-black px-6 text-white dark:bg-white dark:text-black"
+              rounded-full bg-black px-6 dark:bg-white"
               >
                 <IconContactLink
                   link="https://facebook.com/neodyeblue"

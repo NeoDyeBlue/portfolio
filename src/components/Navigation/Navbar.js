@@ -15,7 +15,7 @@ export default function Navigation() {
 
   return (
     <div className="fixed left-0 top-0 z-50 flex w-full justify-end gap-10 p-6 md:relative md:justify-start md:p-0">
-      <div
+      <button
         className={classNames(
           `relative z-10 flex w-fit flex-col items-center
            rounded-full bg-black p-2
@@ -29,7 +29,7 @@ export default function Navigation() {
           <div className="h-[32px] w-[1px] bg-white dark:bg-black md:hidden" />
           <ThemeToggle />
         </div>
-      </div>
+      </button>
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
