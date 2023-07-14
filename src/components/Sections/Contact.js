@@ -1,6 +1,7 @@
 import { ContactLink } from "../Buttons";
 import { MdDownload } from "react-icons/md";
 import Link from "next/link";
+import links from "@/lib/contact-links";
 
 export default function Contact() {
   return (
@@ -18,19 +19,13 @@ export default function Contact() {
       </div>
       <div className="flex flex-col gap-10 drop-shadow-lg lg:flex-row lg:items-end lg:justify-between">
         <ul className="flex flex-col gap-4">
-          <ContactLink name="Facebook" link="https://facebook.com/neodyeblue" />
-          <ContactLink name="GitHub" link="https://github.com/neodyeblue" />
-          <ContactLink
-            name="Linkedin"
-            link="https://www.linkedin.com/in/john-paul-zoleta-63a476261/"
-          />
-          <ContactLink
-            name="jhnplzoleta@gmail.com"
-            link="mailto:jhnplzoleta@gmail.com"
-          />
+          <ContactLink name="Facebook" link={links.facebook} />
+          <ContactLink name="GitHub" link={links.github} />
+          <ContactLink name="Linkedin" link={links.linkedin} />
+          <ContactLink name="jhnplzoleta@gmail.com" link={links.email} />
         </ul>
         <Link
-          href={"John_Paul_Zoleta-Resume.pdf"}
+          href={links.resume}
           className="flex h-fit w-fit items-center justify-center gap-1 
         rounded-full border border-white px-4 py-2 text-center text-lg uppercase shadow-lg transition-colors 
         hover:bg-white hover:text-black"

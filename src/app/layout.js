@@ -11,6 +11,7 @@ import {
   AiFillMail,
   AiFillFileText,
 } from "react-icons/ai";
+import links from "@/lib/contact-links";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -85,23 +86,23 @@ export default function RootLayout({ children }) {
               rounded-full bg-black px-6 dark:bg-white"
               >
                 <IconContactLink
-                  link="https://facebook.com/neodyeblue"
+                  link={links.facebook}
                   icon={<AiFillFacebook size={20} />}
                 />
                 <IconContactLink
-                  link="https://github.com/neodyeblue"
+                  link={links.github}
                   icon={<AiFillGithub size={20} />}
                 />
                 <IconContactLink
-                  link="https://www.linkedin.com/in/john-paul-zoleta-63a476261/"
+                  link={links.linkedin}
                   icon={<AiFillLinkedin size={20} />}
                 />
                 <IconContactLink
-                  link="mailto:jhnplzoleta@gmail.com"
+                  link={links.email}
                   icon={<AiFillMail size={20} />}
                 />
                 <IconContactLink
-                  link="John_Paul_Zoleta-Resume.pdf"
+                  link={links.resume}
                   icon={<AiFillFileText size={20} />}
                 />
               </div>
