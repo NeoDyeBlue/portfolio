@@ -9,6 +9,12 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   function handleMenuClick() {
     setIsMenuOpen((isOpen) => !isOpen);
   }
