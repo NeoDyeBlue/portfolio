@@ -31,7 +31,7 @@ export default function SmallCard({
           src={image}
           alt="project image"
           width={1250}
-          height={1250}
+          height={720}
           className="h-auto w-full rounded-[10px] shadow-md transition-transform group-hover:scale-[1.05]"
         />
       </button>

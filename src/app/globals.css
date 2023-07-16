@@ -15,7 +15,7 @@ html.dark-mode {
     @apply scroll-smooth;
   }
   body {
-    @apply scroll-smooth bg-white font-body selection:bg-cerulean-blue-500 selection:text-white dark:bg-black;
+    @apply scroll-smooth bg-white font-body transition-colors selection:bg-cerulean-blue-500 selection:text-white dark:bg-black;
   }
 }
 

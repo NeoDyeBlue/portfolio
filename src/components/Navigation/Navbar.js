@@ -29,9 +29,11 @@ export default function Navigation() {
         )}
       >
         <div className="flex items-center gap-2">
-          <div className="md:hidden">
-            <MenuButton isOpen={isMenuOpen} onClick={handleMenuClick} />
-          </div>
+          {isClient ? (
+            <div className="md:hidden">
+              <MenuButton isOpen={isMenuOpen} onClick={handleMenuClick} />
+            </div>
+          ) : null}
           <div className="h-[32px] w-[1px] bg-white dark:bg-black md:hidden" />
           <ThemeToggle />
         </div>

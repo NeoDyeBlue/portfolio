@@ -20,8 +20,8 @@ export default function LargeCard({
         <Image
           src={image}
           alt="project image"
-          width={1500}
-          height={1500}
+          width={1250}
+          height={720}
           className="h-auto w-full -rotate-6 rounded-[15px] object-cover shadow-lg transition-transform group-hover:rotate-0"
           // fill
         />
