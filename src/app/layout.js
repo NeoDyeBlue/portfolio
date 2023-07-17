@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
         <body className={classNames(openSans.variable, raleway.variable)}>
           <main
             className={classNames(
-              "relative mx-auto flex flex-col gap-10 p-6 md:flex-row md:gap-20 md:px-12 md:py-0"
+              "relative mx-auto flex flex-col gap-10 p-6 md:pb-0 lg:flex-row lg:gap-20 lg:px-12 lg:py-0"
             )}
           >
             <div
@@ -47,13 +47,13 @@ export default function RootLayout({ children }) {
             bg-right-top bg-no-repeat opacity-30 dark:opacity-100"
             ></div>
             <div
-              className="top-0 flex w-full max-w-[480px] flex-col gap-4 md:sticky 
-              md:h-screen md:justify-between md:py-12"
+              className="relative top-0 flex w-full flex-col gap-4 lg:sticky lg:h-screen 
+              lg:max-w-[480px] lg:justify-between lg:py-12"
             >
               <div className="flex flex-col gap-8">
                 <Navbar />
                 <div className="flex flex-col gap-4">
-                  <div className="flex flex-col font-display text-6xl font-extrabold uppercase leading-none tracking-tight">
+                  <div className="flex flex-col font-display text-6xl font-extrabold uppercase leading-none tracking-tight 540px:text-8xl lg:text-6xl">
                     <p className="max-w-[40vw] text-cerulean-blue-500 md:whitespace-nowrap">
                       John Paul
                     </p>
@@ -64,7 +64,7 @@ export default function RootLayout({ children }) {
                   </p>
                 </div>
               </div>
-              <ul className="hidden flex-col gap-4 uppercase md:flex">
+              <ul className="hidden flex-col gap-4 uppercase lg:flex">
                 <li className="w-fit">
                   <Link href={"#about"} className="w-fit hover:underline">
                     <p>About</p>
@@ -83,7 +83,7 @@ export default function RootLayout({ children }) {
               </ul>
               <div
                 className="mt-10 flex h-[44px] w-fit items-center gap-6
-              rounded-full bg-black px-6 dark:bg-white"
+              rounded-full bg-black px-6 dark:bg-white md:absolute md:bottom-0 md:right-0 lg:relative"
               >
                 <IconContactLink
                   link={links.facebook}

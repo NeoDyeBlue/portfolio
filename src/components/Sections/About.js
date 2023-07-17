@@ -19,7 +19,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="flex flex-col-reverse gap-4 md:pt-12 lg:flex-row lg:gap-8"
+      className="flex flex-col-reverse gap-4 md:flex-row md:gap-8 md:pt-12"
     >
       <div className="flex h-full w-full flex-col gap-6 leading-7">
         <p>
@@ -38,8 +38,8 @@ export default function About() {
         </p>
       </div>
       <div
-        className="aspect-square h-full max-h-[240px] w-full max-w-[240px] 
-        xl:max-h-[320px] xl:max-w-[320px]"
+        className="hidden aspect-square h-full max-h-[240px] w-full 
+        max-w-[240px] md:block md:max-h-[320px] md:max-w-[320px]"
       >
         <Canvas className="h-full w-full">
           {/* <ambientLight intensity={0.1} /> */}

@@ -65,6 +65,9 @@ module.exports = {
           950: "#453a03",
         },
       },
+      screens: {
+        "540px": "540px",
+      },
     },
   },
   plugins: [],
