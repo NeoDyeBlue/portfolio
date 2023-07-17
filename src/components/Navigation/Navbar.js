@@ -20,7 +20,7 @@ export default function Navigation() {
   }
 
   return (
-    <div className="fixed left-0 top-0 z-50 flex w-full justify-end gap-10 p-6 md:relative md:justify-start md:p-0">
+    <div className="fixed left-0 top-0 z-50 flex w-full justify-end gap-10 p-6 lg:relative lg:justify-start lg:p-0">
       <button
         className={classNames(
           `relative z-10 flex w-fit flex-col items-center
@@ -30,7 +30,7 @@ export default function Navigation() {
       >
         <div className="flex items-center gap-2">
           {isClient ? (
-            <div className="md:hidden">
+            <div className="lg:hidden">
               <MenuButton isOpen={isMenuOpen} onClick={handleMenuClick} />
             </div>
           ) : null}
@@ -50,7 +50,7 @@ export default function Navigation() {
               bounce: 0,
               // duration: 2,
             }}
-            className="fixed left-0 top-0 w-full rounded-b-[20px] bg-black p-6 dark:bg-white md:hidden"
+            className="fixed left-0 top-0 w-full rounded-b-[20px] bg-black p-6 dark:bg-white lg:hidden"
           >
             <p className="flex h-[48px] items-center font-display text-3xl font-bold text-white dark:text-black">
               Menu
