@@ -1,8 +1,19 @@
 "use client";
 
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useThree, useFrame } from "@react-three/fiber";
 import { Environment, OrbitControls } from "@react-three/drei";
 import { JPText } from "../3dModels";
+import { Vector3 } from "three";
+
+function Rig() {
+  const { camera, mouse } = useThree();
+  const vec = new Vector3();
+
+  return useFrame(() => {
+    camera.position.lerp(vec.set(mouse.x, mouse.y, camera.position.z), 0.05);
+    camera.lookAt(0, 0, 0);
+  });
+}
 
 export default function About() {
   return (
@@ -32,9 +43,10 @@ export default function About() {
       >
         <Canvas className="h-full w-full">
           {/* <ambientLight intensity={0.1} /> */}
-          <OrbitControls enableZoom={false} />
+          {/* <OrbitControls enableZoom={false} /> */}
           <Environment preset="sunset" />
           <JPText />
+          <Rig />
         </Canvas>
       </div>
     </div>

@@ -17,13 +17,13 @@ const raleway = Raleway({
   subsets: ["latin"],
   variable: "--font-raleway",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  display: "swap",
+  // display: "swap",
 });
 const openSans = Open_Sans({
   subsets: ["latin"],
   variable: "--font-open-sans",
   weight: ["300", "400", "500", "600", "700", "800"],
-  display: "swap",
+  // display: "swap",
 });
 import Link from "next/link";
 
