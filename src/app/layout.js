@@ -107,6 +107,7 @@ export default function RootLayout({ children }) {
                 />
               </div>
             </div>
+            <hr className="border-black dark:border-white lg:hidden"></hr>
             {children}
           </main>
         </body>
