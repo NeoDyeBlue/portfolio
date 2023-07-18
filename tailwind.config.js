@@ -25,6 +25,7 @@ module.exports = {
           "rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px",
       },
       colors: {
+        black: "#050505",
         "ship-gray": {
           50: "#f7f7f8",
           100: "#efedf1",
