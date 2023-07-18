@@ -32,7 +32,7 @@ export default function Works() {
       </p>
       <div className="flex flex-col gap-10 md:gap-20">{largeCards}</div>
       <div className="flex flex-col gap-10">
-        <p className="font-display text-3xl font-bold">Others</p>
+        <p className="font-display text-3xl font-bold">More</p>
         <div className="flex flex-col gap-10">{smallCards}</div>
       </div>
     </div>
