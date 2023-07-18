@@ -16,7 +16,7 @@ export default function Providers({ children }) {
     <ThemeProvider attribute="class">
       <AnimatedCursor
         innerSize={10}
-        outerSize={35}
+        outerSize={45}
         innerScale={1}
         outerScale={2}
         outerAlpha={0}
@@ -27,7 +27,7 @@ export default function Providers({ children }) {
           zIndex: 999,
         }}
         outerStyle={{
-          border: "2px solid var(--cursor-color)",
+          border: "1px solid var(--cursor-color)",
           mixBlendMode: "exclusion",
           zIndex: 999,
         }}
