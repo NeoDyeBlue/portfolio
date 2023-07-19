@@ -18,11 +18,7 @@ function Rig() {
 
 export default function About() {
   const [hovered, setIsHovered] = useState(false);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
-
-  function handlePointerOver(event) {
-    setIsHovered(true);
-  }
+  // const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   return (
     <div
