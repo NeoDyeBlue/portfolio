@@ -10,7 +10,7 @@ export default function MenuButton({ isOpen = false, onClick = () => {} }) {
         className={classNames(
           "h-[1px] w-[20px] origin-left rounded-full bg-black transition-transform dark:bg-white",
           {
-            "rotate-[40deg]": isOpen,
+            "rotate-[42deg]": isOpen,
           }
         )}
       ></div>
@@ -26,7 +26,7 @@ export default function MenuButton({ isOpen = false, onClick = () => {} }) {
         className={classNames(
           "h-[1px] w-[20px] origin-left rounded-full bg-black transition-transform dark:bg-white",
           {
-            "-rotate-[40deg]": isOpen,
+            "-rotate-[42deg]": isOpen,
           }
         )}
       ></div>
