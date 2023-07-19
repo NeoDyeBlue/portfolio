@@ -32,7 +32,7 @@ export default function SmallCard({
           alt="project image"
           width={1250}
           height={720}
-          className="h-auto w-full rounded-[10px] shadow-md transition-transform group-hover:scale-[1.05] dark:shadow-cod-gray-900"
+          className="h-auto w-full rounded-[10px] shadow-md transition-transform group-hover:scale-[1.05]"
         />
       </button>
       <div className="flex flex-col gap-3">

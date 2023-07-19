@@ -37,7 +37,7 @@ export default function ThemeToggle() {
         </span>
         <span className="z-10 flex aspect-square w-[32px] items-center justify-center">
           {theme == "dark" ? (
-            <PiMoonFill size={20} className={classNames("text-black")} />
+            <PiMoonFill size={20} className={classNames("text-cod-gray-950")} />
           ) : (
             <PiMoonLight size={20} className={classNames("text-black")} />
           )}

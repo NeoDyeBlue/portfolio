@@ -23,7 +23,7 @@ export default function LargeCard({
           alt="project image"
           width={1250}
           height={720}
-          className="h-auto w-full -rotate-6 rounded-[15px] object-cover shadow-lg transition-transform group-hover:rotate-0 dark:shadow-cod-gray-900"
+          className="h-auto w-full -rotate-6 rounded-[15px] object-cover shadow-lg transition-transform group-hover:rotate-0"
           // fill
         />
       </Link>

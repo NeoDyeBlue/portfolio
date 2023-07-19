@@ -25,7 +25,7 @@ export default function Navigation() {
         className={classNames(
           `relative z-10 flex w-fit flex-col items-center
            rounded-full border border-black bg-white p-2
-        text-black dark:border-white dark:bg-black dark:text-white`
+        text-black dark:border-white dark:bg-cod-gray-950 dark:text-white`
         )}
       >
         <div className="flex items-center gap-2">
@@ -50,9 +50,10 @@ export default function Navigation() {
               bounce: 0,
               // duration: 2,
             }}
-            className="fixed left-0 top-0 w-full rounded-b-[20px] bg-black p-6 dark:bg-white lg:hidden"
+            className="fixed left-0 top-0 w-full rounded-b-[20px] border-black
+             bg-white p-6 shadow-lg transition-colors dark:border-white dark:bg-cod-gray-950 lg:hidden"
           >
-            <p className="flex h-[48px] items-center font-display text-3xl font-bold text-white dark:text-black">
+            <p className="flex h-[48px] items-center font-display text-3xl font-bold italic text-black dark:text-white">
               Menu
             </p>
             <ul
@@ -60,7 +61,7 @@ export default function Navigation() {
               onClick={() => setIsMenuOpen(false)}
               className={classNames(
                 `flex w-full flex-col items-center gap-6
-                pt-6 text-white dark:text-black`
+                pt-6 text-black dark:text-white`
               )}
             >
               <MenuItem text="About" link="#about" />
