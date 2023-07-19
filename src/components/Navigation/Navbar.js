@@ -34,7 +34,7 @@ export default function Navigation() {
               <MenuButton isOpen={isMenuOpen} onClick={handleMenuClick} />
             </div>
           ) : null}
-          <div className="h-[32px] w-[1px] bg-black dark:bg-white md:hidden" />
+          <div className="h-[32px] w-[1px] bg-black dark:bg-white lg:hidden" />
           <ThemeToggle />
         </div>
       </button>
