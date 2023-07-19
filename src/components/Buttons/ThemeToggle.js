@@ -1,11 +1,6 @@
 "use client";
 
-import {
-  MdLightMode,
-  MdDarkMode,
-  MdOutlineDarkMode,
-  MdOutlineLightMode,
-} from "react-icons/md";
+import { PiSunLight, PiSunFill, PiMoonLight, PiMoonFill } from "react-icons/pi";
 import { useState, useEffect } from "react";
 import classNames from "classnames";
 import { useTheme } from "next-themes";
@@ -35,25 +30,22 @@ export default function ThemeToggle() {
         <span className="hidden">Switch theme</span>
         <span className="z-10 flex aspect-square w-[32px] items-center justify-center">
           {theme == "light" ? (
-            <MdLightMode size={20} className={classNames("text-black")} />
+            <PiSunFill size={20} className={classNames("text-white")} />
           ) : (
-            <MdOutlineLightMode
-              size={20}
-              className={classNames("text-black")}
-            />
+            <PiSunLight size={20} className={classNames("text-black")} />
           )}
         </span>
         <span className="z-10 flex aspect-square w-[32px] items-center justify-center">
           {theme == "dark" ? (
-            <MdDarkMode size={20} className={classNames("text-white")} />
+            <PiMoonFill size={20} className={classNames("text-white")} />
           ) : (
-            <MdOutlineDarkMode size={20} className={classNames("text-white")} />
+            <PiMoonLight size={20} className={classNames("text-black")} />
           )}
           {/* <MdDarkMode size={20} className={classNames("text-black")} /> */}
         </span>
         <span
           className={classNames(
-            "absolute aspect-square w-[32px] rounded-full bg-white transition-all dark:bg-black",
+            "absolute aspect-square w-[32px] rounded-full bg-black transition-all dark:bg-white",
             {
               "translate-x-0": theme == "light",
               "translate-x-full": theme == "dark",

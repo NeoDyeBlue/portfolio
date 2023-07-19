@@ -31,9 +31,9 @@ export default function About() {
           my early years in Computer Science, I practiced coding and designing
           through game development and static web pages. I also gained
           experience from an internship and other projects. Now I&apos;m focused
-          on <span className="font-bold">React</span> and{" "}
-          <span className="font-bold">Next.js</span> for creating responsive and
-          neat websites.
+          on <span className="font-bold italic">React</span> and{" "}
+          <span className="font-bold italic">Next.js</span> for creating
+          responsive and neat websites.
         </p>
         <p>
           I am a nature lover and I usually do my exhausting but fun grind in{" "}
@@ -42,15 +42,15 @@ export default function About() {
         </p>
       </div>
       <div
-        className="hidden aspect-square h-full max-h-[240px] w-full 
-        max-w-[240px] md:block md:max-h-[320px] md:max-w-[320px]"
+        className="relative hidden aspect-square h-full max-h-[240px] w-full max-w-[240px] border-y border-gray-300 before:absolute before:left-0
+        before:top-0 before:h-[1px] before:w-[65%] before:bg-gray-300 md:block md:max-h-[320px] md:max-w-[320px] lg:border-t-0"
       >
         <Canvas
           className="h-full w-full"
           onPointerOver={() => setIsHovered(true)}
           onPointerOut={() => setIsHovered(false)}
         >
-          <ambientLight intensity={1} />
+          <ambientLight intensity={2} />
           {/* <OrbitControls enableZoom={false} /> */}
           {/* <Environment preset="sunset" /> */}
           <JPText isHovered={hovered} />
