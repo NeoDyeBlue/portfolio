@@ -12,6 +12,8 @@ export default function JPText(props) {
   const { nodes, materials } = useGLTF("/jp.glb");
   const modelRef = useRef(null);
 
+  const { theme } = useTheme();
+
   const [springs, api] = useSpring(
     () => ({
       rotation: [0, 0, 0],
@@ -47,9 +49,11 @@ export default function JPText(props) {
             rotation={springs.rotation.to((x, y) => [x, y, 0])}
             position={[0, 0, 0]}
           >
-            <meshStandardMaterial color={"#f3f4f6"} />
+            <meshStandardMaterial
+              color={theme == "dark" ? "#1a1a1a" : "#f3f4f6"}
+            />
             {/* <meshPhongMaterial color={"#fff"} transparent opacity={0} /> */}
-            <Edges scale={1} color={"black"} />
+            <Edges scale={1} color={theme == "dark" ? "#fafafa" : "#050505"} />
           </animated.mesh>
         </Center>
       </group>

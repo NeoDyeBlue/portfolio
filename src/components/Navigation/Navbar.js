@@ -25,7 +25,7 @@ export default function Navigation() {
         className={classNames(
           `relative z-10 flex w-fit flex-col items-center
            rounded-full border border-black bg-white p-2
-        text-black dark:bg-white  dark:text-black`
+        text-black dark:border-white dark:bg-black dark:text-white`
         )}
       >
         <div className="flex items-center gap-2">
@@ -34,7 +34,7 @@ export default function Navigation() {
               <MenuButton isOpen={isMenuOpen} onClick={handleMenuClick} />
             </div>
           ) : null}
-          <div className="h-[32px] w-[1px] bg-white dark:bg-black md:hidden" />
+          <div className="h-[32px] w-[1px] bg-black dark:bg-white md:hidden" />
           <ThemeToggle />
         </div>
       </button>

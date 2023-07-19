@@ -43,7 +43,7 @@ export default function About() {
       </div>
       <div
         className="relative hidden aspect-square h-full max-h-[240px] w-full max-w-[240px] border-y border-gray-300 before:absolute before:left-0
-        before:top-0 before:h-[1px] before:w-[65%] before:bg-gray-300 md:block md:max-h-[320px] md:max-w-[320px] lg:border-t-0"
+        before:top-0 before:h-[1px] before:w-[65%] before:bg-gray-300 dark:border-cod-gray-700 before:dark:bg-cod-gray-700 md:block md:max-h-[320px] md:max-w-[320px] lg:border-t-0"
       >
         <Canvas
           className="h-full w-full"

@@ -24,6 +24,7 @@ import {
   PiFilePdfFill,
 } from "react-icons/pi";
 import links from "@/lib/contact-links";
+import HeroText from "@/components/HeroText";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -63,19 +64,7 @@ export default function RootLayout({ children }) {
               className="relative top-0 flex w-full flex-col gap-4 lg:sticky lg:h-screen 
               lg:max-w-[480px] lg:justify-between lg:py-12"
             >
-              <div className="flex flex-col gap-8">
-                <div className="flex flex-col gap-4">
-                  <div className="flex flex-col font-display text-6xl font-extrabold uppercase leading-none 540px:text-8xl lg:text-[4rem]">
-                    <p className="max-w-[40vw] md:whitespace-nowrap">
-                      John Paul
-                    </p>
-                    <p className="text-stroke text-transparent">Zoleta</p>
-                  </div>
-                  <p className="font-display text-3xl font-bold italic">
-                    Web Developer
-                  </p>
-                </div>
-              </div>
+              <HeroText />
               <ul className="hidden flex-col gap-4 uppercase lg:flex">
                 <li className="w-fit">
                   <Link href={"#about"} className="w-fit hover:underline">

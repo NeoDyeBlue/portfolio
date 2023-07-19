@@ -32,12 +32,12 @@ export default function ThemeToggle() {
           {theme == "light" ? (
             <PiSunFill size={20} className={classNames("text-white")} />
           ) : (
-            <PiSunLight size={20} className={classNames("text-black")} />
+            <PiSunLight size={20} className={classNames("text-white")} />
           )}
         </span>
         <span className="z-10 flex aspect-square w-[32px] items-center justify-center">
           {theme == "dark" ? (
-            <PiMoonFill size={20} className={classNames("text-white")} />
+            <PiMoonFill size={20} className={classNames("text-black")} />
           ) : (
             <PiMoonLight size={20} className={classNames("text-black")} />
           )}

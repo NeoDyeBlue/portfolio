@@ -25,14 +25,14 @@ export default function SmallCard({
       <button
         onClick={() => setShowCarousel(true)}
         className="group relative box-border h-full w-full max-w-[300px] cursor-pointer overflow-hidden rounded-[15px] border border-gray-300 bg-clip-padding
-        p-3 transition-all hover:border-black dark:bg-gray-800 dark:hover:border-white"
+        p-3 transition-all hover:border-black dark:border-cod-gray-700 dark:hover:border-white"
       >
         <Image
           src={image}
           alt="project image"
           width={1250}
           height={720}
-          className="h-auto w-full rounded-[10px] shadow-md transition-transform group-hover:scale-[1.05]"
+          className="h-auto w-full rounded-[10px] shadow-md transition-transform group-hover:scale-[1.05] dark:shadow-cod-gray-900"
         />
       </button>
       <div className="flex flex-col gap-3">

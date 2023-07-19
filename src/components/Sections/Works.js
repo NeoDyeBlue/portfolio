@@ -27,7 +27,10 @@ export default function Works() {
 
   return (
     <div id="works" className="relative flex flex-col gap-20 md:py-12">
-      <p className="absolute -top-[2.8rem] left-[1.5rem] z-10 bg-white px-1 font-display text-6xl font-extrabold uppercase text-gray-200 dark:text-gray-800 md:left-[2.5rem] md:top-[0.25rem] md:text-[4rem]">
+      <p
+        className="absolute -top-[2.8rem] left-[1.5rem] z-10 bg-white px-1 font-display text-6xl font-extrabold uppercase text-gray-300
+       transition-colors dark:bg-black dark:text-cod-gray-800 md:left-[2.5rem] md:top-[0.25rem] md:text-[4rem]"
+      >
         works
       </p>
       <div className="flex flex-col gap-10 md:gap-20">{largeCards}</div>

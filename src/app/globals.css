@@ -4,12 +4,10 @@
 
 html {
   --cursor-color: #fff;
-  --stroke-color: #050505;
 }
 
 html.dark-mode {
   --cursor-color: #000;
-  --stroke-color: #fafafa;
 }
 
 @layer base {
@@ -31,7 +29,12 @@ html.dark-mode {
   background-position: top right;
 }
 
-.text-stroke {
-  -webkit-text-stroke: 1px var(--stroke-color);
-  text-stroke: 1px var(--stroke-color);
+.text-stroke-light {
+  -webkit-text-stroke: 1px #050505;
+  text-stroke: 1px #050505;
+}
+
+.text-stroke-dark {
+  -webkit-text-stroke: 1px #fafafa;
+  text-stroke: 1px #fafafa;
 }
