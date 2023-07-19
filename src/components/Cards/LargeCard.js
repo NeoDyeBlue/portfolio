@@ -14,8 +14,8 @@ export default function LargeCard({
     <div className="flex flex-col gap-4">
       <Link
         href={link}
-        className="group relative box-border overflow-visible rounded-[20px] border border-b-8 border-r-8 border-gray-100
-        bg-gray-100 p-8 transition-all hover:border-black dark:border-gray-800 dark:bg-gray-800 dark:hover:border-white"
+        className="group relative box-border overflow-visible rounded-[20px] border border-b-8 border-r-8 border-transparent bg-gray-100
+        bg-clip-padding p-8 transition-all hover:border-black dark:bg-gray-800 dark:hover:border-white"
       >
         <Image
           src={image}

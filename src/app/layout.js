@@ -28,7 +28,7 @@ const openSans = Open_Sans({
 import Link from "next/link";
 
 export const metadata = {
-  title: "John Paul Zoleta",
+  title: "John Paul Zoleta | Web Developer",
   description: "Hi there, I'm John Paul Zoleta, a web developer",
 };
 
@@ -42,10 +42,10 @@ export default function RootLayout({ children }) {
               "relative mx-auto flex flex-col gap-10 p-6 md:pb-0 lg:flex-row lg:gap-20 lg:px-12 lg:py-0"
             )}
           >
-            <div
+            {/* <div
               className="absolute left-0 top-0 z-[-1] h-screen w-full bg-[url('/gradient.svg')] bg-[length:800px_600px] 
-            bg-right-top bg-no-repeat opacity-30 dark:opacity-100"
-            ></div>
+            bg-right-top bg-no-repeat opacity-50 dark:opacity-100"
+            ></div> */}
             <div
               className="relative top-0 flex w-full flex-col gap-4 lg:sticky lg:h-screen 
               lg:max-w-[480px] lg:justify-between lg:py-12"
@@ -53,11 +53,11 @@ export default function RootLayout({ children }) {
               <div className="flex flex-col gap-8">
                 <Navbar />
                 <div className="flex flex-col gap-4">
-                  <div className="flex flex-col font-display text-6xl font-extrabold uppercase leading-none tracking-tight 540px:text-8xl lg:text-6xl">
-                    <p className="max-w-[40vw] text-cerulean-blue-500 md:whitespace-nowrap">
+                  <div className="flex flex-col font-display text-6xl font-extrabold uppercase leading-none 540px:text-8xl lg:text-6xl">
+                    <p className="max-w-[40vw] md:whitespace-nowrap">
                       John Paul
                     </p>
-                    <p>Zoleta</p>
+                    <p className="text-stroke text-transparent">Zoleta</p>
                   </div>
                   <p className="font-display text-3xl font-bold">
                     Web Developer
