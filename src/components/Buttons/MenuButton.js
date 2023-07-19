@@ -8,15 +8,15 @@ export default function MenuButton({ isOpen = false, onClick = () => {} }) {
     >
       <div
         className={classNames(
-          "h-[2px] w-[20px] origin-left rounded-full bg-white transition-transform dark:bg-ship-gray-950",
+          "h-[1px] w-[20px] origin-left rounded-full bg-black transition-transform dark:bg-white",
           {
-            "rotate-[52deg]": isOpen,
+            "rotate-[40deg]": isOpen,
           }
         )}
       ></div>
       <div
         className={classNames(
-          "h-[2px] w-[20px] origin-left rounded-full bg-white transition-opacity dark:bg-ship-gray-950",
+          "h-[1px] w-[20px] origin-left rounded-full bg-black transition-opacity dark:bg-white",
           {
             "opacity-0": isOpen,
           }
@@ -24,9 +24,9 @@ export default function MenuButton({ isOpen = false, onClick = () => {} }) {
       ></div>
       <div
         className={classNames(
-          "h-[2px] w-[20px] origin-left rounded-full bg-white transition-transform dark:bg-ship-gray-950",
+          "h-[1px] w-[20px] origin-left rounded-full bg-black transition-transform dark:bg-white",
           {
-            "-rotate-[52deg]": isOpen,
+            "-rotate-[40deg]": isOpen,
           }
         )}
       ></div>

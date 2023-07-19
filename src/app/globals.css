@@ -15,7 +15,8 @@ html.dark-mode {
     @apply scroll-smooth;
   }
   body {
-    @apply scroll-smooth bg-white font-body transition-colors selection:bg-cerulean-blue-500 selection:text-white dark:bg-black;
+    @apply scroll-smooth bg-white font-body transition-colors selection:bg-black selection:text-white 
+    dark:bg-black dark:selection:bg-white dark:selection:text-black;
   }
 }
 
@@ -26,4 +27,14 @@ html.dark-mode {
     rgba(0, 0, 0, 0) 25%
   );
   background-position: top right;
+}
+
+.text-stroke-light {
+  -webkit-text-stroke: 1px #050505;
+  text-stroke: 1px #050505;
+}
+
+.text-stroke-dark {
+  -webkit-text-stroke: 1px #fafafa;
+  text-stroke: 1px #fafafa;
 }

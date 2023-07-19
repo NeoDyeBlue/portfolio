@@ -6,6 +6,7 @@ export default function CircleLinkButton({ link = "", size = 40 }) {
   return (
     <Link
       href={link}
+      target="_blank"
       style={{ width: `${size}px`, height: `${size}px` }}
       className={classNames(
         "group flex aspect-square flex-shrink-0 items-center justify-center rounded-full transition-colors",

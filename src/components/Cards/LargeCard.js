@@ -14,15 +14,16 @@ export default function LargeCard({
     <div className="flex flex-col gap-4">
       <Link
         href={link}
-        className="group relative box-border overflow-visible rounded-[20px] border border-b-8 border-r-8 border-gray-100
-        bg-gray-100 p-8 transition-all hover:border-black dark:border-gray-800 dark:bg-gray-800 dark:hover:border-white"
+        target="_blank"
+        className="group relative box-border overflow-visible rounded-[20px] border border-gray-300
+        bg-clip-padding p-8 transition-all hover:border-black dark:border-cod-gray-700 dark:hover:border-white"
       >
         <Image
           src={image}
           alt="project image"
           width={1250}
           height={720}
-          className="h-auto w-full -rotate-6 rounded-[15px] object-cover shadow-lg transition-transform group-hover:rotate-0"
+          className="h-auto w-full -rotate-6 rounded-[15px] object-cover shadow-lg transition-transform group-hover:rotate-0 dark:shadow-cod-gray-900"
           // fill
         />
       </Link>
@@ -33,7 +34,7 @@ export default function LargeCard({
       </div>
       <div className="flex justify-between gap-4">
         <div className="flex flex-col gap-1">
-          <p className="font-display text-3xl font-bold">{name}</p>
+          <p className="font-display text-3xl font-bold italic">{name}</p>
           <p className="leading-7">{description}</p>
         </div>
         <CircleLinkButton link={link} size={60} />

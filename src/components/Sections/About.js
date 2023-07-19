@@ -4,6 +4,7 @@ import { Canvas, useThree, useFrame } from "@react-three/fiber";
 import { Environment, OrbitControls } from "@react-three/drei";
 import { JPText } from "../3dModels";
 import { Vector3 } from "three";
+import { useState } from "react";
 
 function Rig() {
   const { camera, mouse } = useThree();
@@ -16,6 +17,9 @@ function Rig() {
 }
 
 export default function About() {
+  const [hovered, setIsHovered] = useState(false);
+  // const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+
   return (
     <div
       id="about"
@@ -27,9 +31,9 @@ export default function About() {
           my early years in Computer Science, I practiced coding and designing
           through game development and static web pages. I also gained
           experience from an internship and other projects. Now I&apos;m focused
-          on <span className="font-bold">React</span> and{" "}
-          <span className="font-bold">Next.js</span> for creating responsive and
-          neat websites.
+          on <span className="font-bold italic">React</span> and{" "}
+          <span className="font-bold italic">Next.js</span> for creating
+          responsive and neat websites.
         </p>
         <p>
           I am a nature lover and I usually do my exhausting but fun grind in{" "}
@@ -38,15 +42,19 @@ export default function About() {
         </p>
       </div>
       <div
-        className="hidden aspect-square h-full max-h-[240px] w-full 
-        max-w-[240px] md:block md:max-h-[320px] md:max-w-[320px]"
+        className="relative hidden aspect-square h-full max-h-[240px] w-full max-w-[240px] border-y border-gray-300 before:absolute before:left-0
+        before:top-0 before:hidden before:h-[1px] before:w-[65%] before:bg-gray-300 dark:border-cod-gray-700 before:dark:bg-cod-gray-700 md:block md:max-h-[320px] md:max-w-[320px] lg:border-t-0 lg:before:block"
       >
-        <Canvas className="h-full w-full">
-          {/* <ambientLight intensity={0.1} /> */}
+        <Canvas
+          className="h-full w-full"
+          onPointerOver={() => setIsHovered(true)}
+          onPointerOut={() => setIsHovered(false)}
+        >
+          <ambientLight intensity={2} />
           {/* <OrbitControls enableZoom={false} /> */}
-          <Environment preset="sunset" />
-          <JPText />
-          <Rig />
+          {/* <Environment preset="sunset" /> */}
+          <JPText isHovered={hovered} />
+          {/* <Rig /> */}
         </Canvas>
       </div>
     </div>

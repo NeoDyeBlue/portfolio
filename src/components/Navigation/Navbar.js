@@ -20,12 +20,12 @@ export default function Navigation() {
   }
 
   return (
-    <div className="fixed left-0 top-0 z-50 flex w-full justify-end gap-10 p-6 lg:relative lg:justify-start lg:p-0">
+    <div className="fixed left-0 top-0 z-50 flex w-full justify-end gap-10 p-6 lg:p-12">
       <button
         className={classNames(
           `relative z-10 flex w-fit flex-col items-center
-           rounded-full bg-black p-2
-        text-white dark:bg-white  dark:text-black`
+           rounded-full border border-black bg-white p-2
+        text-black dark:border-white dark:bg-black dark:text-white`
         )}
       >
         <div className="flex items-center gap-2">
@@ -34,7 +34,7 @@ export default function Navigation() {
               <MenuButton isOpen={isMenuOpen} onClick={handleMenuClick} />
             </div>
           ) : null}
-          <div className="h-[32px] w-[1px] bg-white dark:bg-black md:hidden" />
+          <div className="h-[32px] w-[1px] bg-black dark:bg-white lg:hidden" />
           <ThemeToggle />
         </div>
       </button>
