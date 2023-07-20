@@ -1,7 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import TechBadge from "../TechBadge";
 import { CircleLinkButton } from "../Buttons";
 import Link from "next/link";
+import Tilt from "react-parallax-tilt";
+// import "./ParallaxEffectGlareScale.demozap.scss";
 
 export default function LargeCard({
   name = "",
@@ -16,16 +20,24 @@ export default function LargeCard({
         href={link}
         target="_blank"
         className="group relative box-border overflow-visible rounded-[20px] border border-gray-300
-        bg-clip-padding p-8 transition-all hover:border-black dark:border-cod-gray-700 dark:hover:border-white"
+        bg-clip-padding p-6 transition-all hover:border-black dark:border-cod-gray-700 dark:hover:border-white md:p-8"
       >
-        <Image
-          src={image}
-          alt="project image"
-          width={1250}
-          height={720}
-          className="h-auto w-full -rotate-6 rounded-[15px] object-cover shadow-lg transition-transform group-hover:rotate-0"
-          // fill
-        />
+        <Tilt
+          // className="parallax-effect-glare-scale"
+          perspective={1500}
+          glareEnable={true}
+          glareMaxOpacity={0.45}
+          scale={1.02}
+        >
+          <Image
+            src={image}
+            alt="project image"
+            width={1250}
+            height={720}
+            className="z-20 h-auto w-full -rotate-6 rounded-[15px] object-cover shadow-lg transition-transform group-hover:rotate-0"
+            // fill
+          />
+        </Tilt>
       </Link>
       <div className="flex flex-wrap gap-2">
         {techs.map((tech, index) => (
