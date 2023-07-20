@@ -12,7 +12,7 @@ html.dark-mode {
 
 @layer base {
   html {
-    @apply scroll-smooth;
+    @apply scroll-p-6 scroll-smooth lg:scroll-p-12;
   }
   body {
     @apply scroll-smooth bg-white font-body transition-colors selection:bg-black selection:text-white 

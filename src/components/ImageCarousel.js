@@ -7,6 +7,7 @@ import { X } from "@phosphor-icons/react";
 import { RemoveScroll } from "react-remove-scroll";
 import classNames from "classnames";
 import { useRef, useEffect, useState } from "react";
+import { CarouselButton } from "./Buttons";
 
 function Indicator(
   clickHandler = () => {},
@@ -21,7 +22,7 @@ function Indicator(
         "mr-[8px] inline-block h-[10px] w-[10px] cursor-pointer rounded-full border",
         {
           "border-black bg-black": isSelected,
-          "border-gray-400 bg-white": !isSelected,
+          "border-gray-300 bg-white": !isSelected,
         }
       )}
     ></div>
@@ -82,12 +83,12 @@ export default function ImageCarousel({
       )}
       style={{ height: `${containerHeight}px` }}
     >
-      <div className="h-full overflow-hidden rounded-[20px] border border-gray-300 dark:border-gray-800">
+      <div className="h-full overflow-hidden rounded-[20px] border border-gray-300 dark:border-cod-gray-800">
         <Image
           src={image}
           alt="project image"
-          width={1500}
-          height={1500}
+          width={1250}
+          height={720}
           className="h-auto max-h-full w-auto max-w-full"
           // placeholder="blur"
           //   fill
@@ -100,15 +101,15 @@ export default function ImageCarousel({
     <div
       key={index}
       className={classNames(
-        "relative flex overflow-hidden rounded-[20px] border border-gray-300 dark:border-gray-800"
+        "relative flex overflow-hidden rounded-[20px] border border-gray-300 dark:border-cod-gray-800"
       )}
     >
       <div className="h-full w-full overflow-hidden">
         <Image
           src={image}
           alt="project image"
-          width={1500}
-          height={1500}
+          width={1250}
+          height={720}
           className="h-auto w-full"
           // placeholder="blur"
           //   fill
@@ -119,9 +120,9 @@ export default function ImageCarousel({
 
   return (
     <RemoveScroll>
-      <div className="fixed left-0 top-0 z-[100] flex h-full max-h-screen w-full flex-col gap-6 overflow-y-auto bg-white p-6 dark:bg-black md:p-12">
+      <div className="fixed left-0 top-0 z-[100] flex h-full max-h-screen w-full flex-col gap-6 overflow-y-auto bg-white p-6 dark:bg-cod-gray-950 md:p-12">
         <div className="flex gap-6 dark:text-white">
-          <p className="w-full overflow-hidden font-display text-xl font-bold sm:text-ellipsis sm:text-2xl">
+          <p className="w-full overflow-hidden font-display text-xl font-bold italic sm:text-ellipsis sm:text-2xl">
             {title}
           </p>
           <div className="ml-auto flex items-center gap-4 self-start">
@@ -138,14 +139,7 @@ export default function ImageCarousel({
           className="hidden h-full w-full items-center gap-6 lg:flex"
           ref={containerRef}
         >
-          <button
-            onClick={prev}
-            disabled={selectedItem == 0}
-            className="text-6xl font-light text-gray-500 transition-colors 
-            hover:text-black disabled:text-gray-200 dark:text-gray-600 dark:hover:text-white disabled:dark:text-gray-800"
-          >
-            {"<"}
-          </button>
+          <CarouselButton isLeft disabled={selectedItem == 0} onClick={prev} />
           <Carousel
             selectedItem={selectedItem}
             className="h-full w-full"
@@ -160,14 +154,10 @@ export default function ImageCarousel({
           >
             {carouselImages}
           </Carousel>
-          <button
-            onClick={next}
+          <CarouselButton
             disabled={selectedItem == images.length - 1}
-            className="text-6xl font-light text-gray-500 transition-colors 
-            hover:text-black disabled:text-gray-200 dark:text-gray-600 dark:hover:text-white disabled:dark:text-gray-800"
-          >
-            {">"}
-          </button>
+            onClick={next}
+          />
         </div>
       </div>
     </RemoveScroll>
