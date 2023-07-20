@@ -42,12 +42,12 @@ export default function LargeCard({
           <TechBadge key={index} text={tech} />
         ))}
       </div>
-      <div className="flex justify-between gap-4">
+      <div className="flex justify-between gap-6">
         <div className="flex flex-col gap-1">
           <p className="font-display text-3xl font-bold italic">{name}</p>
           <p className="leading-7">{description}</p>
         </div>
-        <CircleLinkButton link={link} size={60} />
+        <CircleLinkButton link={link} />
       </div>
     </div>
   );

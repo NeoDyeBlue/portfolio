@@ -29,8 +29,8 @@ export default function Works() {
     <div id="works" className="relative flex flex-col gap-20">
       <div>
         <p
-          className="relative z-10 ml-6 w-fit bg-white pl-1 pr-2 font-display text-6xl font-extrabold uppercase leading-none text-gray-300
-       transition-colors dark:bg-cod-gray-950 dark:text-cod-gray-800 md:ml-8 md:text-[4rem]"
+          className="relative z-10 ml-6 w-fit bg-white pl-1 pr-2 font-display text-3xl font-extrabold uppercase leading-none text-gray-300
+       transition-colors dark:bg-cod-gray-950 dark:text-cod-gray-800 320px:text-6xl md:ml-8 md:text-[4rem]"
         >
           works
         </p>
