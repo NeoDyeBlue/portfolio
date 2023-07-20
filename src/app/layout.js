@@ -3,40 +3,20 @@ import { Raleway, Open_Sans } from "next/font/google";
 import classNames from "classnames";
 import { Navbar } from "@/components/Navigation";
 import Providers from "@/components/Providers";
-import { IconContactLink } from "@/components/Buttons";
-// import {
-//   AiFillFacebook,
-//   AiFillLinkedin,
-//   AiFillGithub,
-//   AiFillMail,
-//   AiFillFileText,
-// } from "react-icons/ai";
-import {
-  PiFacebookLogoLight,
-  PiFacebookLogoFill,
-  PiGithubLogoLight,
-  PiGithubLogoFill,
-  PiLinkedinLogoLight,
-  PiLinkedinLogoFill,
-  PiEnvelopeLight,
-  PiEnvelopeFill,
-  PiFilePdfLight,
-  PiFilePdfFill,
-} from "react-icons/pi";
-import links from "@/lib/contact-links";
 import HeroText from "@/components/HeroText";
+import IconContactLinks from "@/components/Navigation/IconContactLinks";
 
 const raleway = Raleway({
   subsets: ["latin"],
   variable: "--font-raleway",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  // display: "swap",
+  display: "swap",
 });
 const openSans = Open_Sans({
   subsets: ["latin"],
   variable: "--font-open-sans",
   weight: ["300", "400", "500", "600", "700", "800"],
-  // display: "swap",
+  display: "swap",
 });
 import Link from "next/link";
 
@@ -52,7 +32,7 @@ export default function RootLayout({ children }) {
         <body className={classNames(openSans.variable, raleway.variable)}>
           <main
             className={classNames(
-              "relative mx-auto flex flex-col gap-10 p-6 md:pb-0 lg:flex-row lg:gap-20 lg:px-12 lg:py-0"
+              "relative mx-auto flex flex-col gap-10 p-6 md:pb-0 lg:flex-row lg:gap-12 lg:px-12 lg:py-0"
             )}
           >
             {/* <div
@@ -61,8 +41,8 @@ export default function RootLayout({ children }) {
             ></div> */}
             <Navbar />
             <div
-              className="relative top-0 flex w-full flex-col gap-4 lg:sticky lg:h-screen 
-              lg:max-w-[480px] lg:justify-between lg:py-12"
+              className="relative top-0 flex w-full flex-col gap-4 lg:sticky 
+              lg:h-screen lg:max-w-[480px] lg:justify-between lg:py-12"
             >
               <HeroText />
               <ul className="hidden flex-col gap-4 uppercase lg:flex">
@@ -82,38 +62,12 @@ export default function RootLayout({ children }) {
                   </Link>
                 </li>
               </ul>
-              <div
-                className="mt-10 flex h-[44px] w-fit items-center gap-6
-              rounded-full md:absolute md:bottom-0 md:right-0 lg:relative"
-              >
-                <IconContactLink
-                  link={links.facebook}
-                  icon={<PiFacebookLogoLight size={28} />}
-                  fillIcon={<PiFacebookLogoFill size={28} />}
-                />
-                <IconContactLink
-                  link={links.github}
-                  icon={<PiGithubLogoLight size={28} />}
-                  fillIcon={<PiGithubLogoFill size={28} />}
-                />
-                <IconContactLink
-                  link={links.linkedin}
-                  icon={<PiLinkedinLogoLight size={28} />}
-                  fillIcon={<PiLinkedinLogoFill size={28} />}
-                />
-                <IconContactLink
-                  link={links.email}
-                  icon={<PiEnvelopeLight size={28} />}
-                  fillIcon={<PiEnvelopeFill size={28} />}
-                />
-                <IconContactLink
-                  link={links.resume}
-                  icon={<PiFilePdfLight size={28} />}
-                  fillIcon={<PiFilePdfFill size={28} />}
-                />
-              </div>
+              <IconContactLinks />
             </div>
-            <hr className="border-gray-300 dark:border-cod-gray-800 lg:hidden"></hr>
+            <div className="lg:sticky lg:top-0 lg:h-screen lg:py-12">
+              <div className="h-[1px] w-full bg-gray-300 dark:bg-cod-gray-800 lg:h-full lg:w-[1px]" />
+            </div>
+            {/* <hr className="border-gray-300 dark:border-cod-gray-800"></hr> */}
             {children}
           </main>
         </body>

@@ -24,6 +24,7 @@ export default function LargeCard({
       >
         <Tilt
           // className="parallax-effect-glare-scale"
+          tiltReverse
           perspective={1500}
           glareEnable={true}
           glareMaxOpacity={0.45}

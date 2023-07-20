@@ -26,9 +26,9 @@ export default function Works() {
   ));
 
   return (
-    <div id="works" className="relative flex flex-col gap-20 md:py-12">
+    <div id="works" className="relative flex flex-col gap-20 py-8 md:py-12">
       <p
-        className="absolute -top-[2.8rem] left-[1.5rem] z-10 bg-white px-1 font-display text-6xl font-extrabold uppercase text-gray-300
+        className="absolute -top-[1rem] left-[1.5rem] z-10 bg-white px-1 font-display text-6xl font-extrabold uppercase text-gray-300
        transition-colors dark:bg-cod-gray-950 dark:text-cod-gray-800 md:left-[2.5rem] md:top-[0.25rem] md:text-[4rem]"
       >
         works

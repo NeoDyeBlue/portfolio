@@ -1,6 +1,6 @@
 "use client";
 
-import { PiSunLight, PiSunFill, PiMoonLight, PiMoonFill } from "react-icons/pi";
+import { Sun, Moon } from "@phosphor-icons/react";
 import { useState, useEffect } from "react";
 import classNames from "classnames";
 import { useTheme } from "next-themes";
@@ -30,16 +30,28 @@ export default function ThemeToggle() {
         <span className="hidden">Switch theme</span>
         <span className="z-10 flex aspect-square w-[32px] items-center justify-center">
           {theme == "light" ? (
-            <PiSunFill size={20} className={classNames("text-white")} />
+            <Sun weight="fill" size={20} className={classNames("text-white")} />
           ) : (
-            <PiSunLight size={20} className={classNames("text-white")} />
+            <Sun
+              weight="light"
+              size={20}
+              className={classNames("text-white")}
+            />
           )}
         </span>
         <span className="z-10 flex aspect-square w-[32px] items-center justify-center">
           {theme == "dark" ? (
-            <PiMoonFill size={20} className={classNames("text-cod-gray-950")} />
+            <Moon
+              weight="fill"
+              size={20}
+              className={classNames("text-cod-gray-950")}
+            />
           ) : (
-            <PiMoonLight size={20} className={classNames("text-black")} />
+            <Moon
+              weight="light"
+              size={20}
+              className={classNames("text-black")}
+            />
           )}
           {/* <MdDarkMode size={20} className={classNames("text-black")} /> */}
         </span>
