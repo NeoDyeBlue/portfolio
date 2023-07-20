@@ -1,6 +1,9 @@
+"use client";
+
 import { ContactLink } from "../Buttons";
 import Link from "next/link";
 import links from "@/lib/contact-links";
+import Tilt from "react-parallax-tilt";
 
 export default function Contact() {
   return (
@@ -23,14 +26,16 @@ export default function Contact() {
           <ContactLink name="Linkedin" link={links.linkedin} />
           <ContactLink name="jhnplzoleta@gmail.com" link={links.email} />
         </ul>
-        <Link
-          href={links.resume}
-          className="flex h-fit w-fit items-center justify-center gap-1 
+        <Tilt perspective={500} scale={1.02}>
+          <Link
+            href={links.resume}
+            className="flex h-fit w-fit items-center justify-center gap-1 
         rounded-full border border-white px-4 py-2 text-center text-lg uppercase shadow-lg transition-colors 
         hover:bg-white hover:text-black"
-        >
-          Resume
-        </Link>
+          >
+            Resume
+          </Link>
+        </Tilt>
       </div>
     </div>
   );

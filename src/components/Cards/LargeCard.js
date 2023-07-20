@@ -23,8 +23,6 @@ export default function LargeCard({
         <Tilt
           className="overflow-hidden rounded-[15px] shadow-md transition-all hover:shadow-xl"
           perspective={2500}
-          // glareEnable={true}
-          glareMaxOpacity={0.45}
           scale={1.02}
         >
           <Link href={link} target="_blank">

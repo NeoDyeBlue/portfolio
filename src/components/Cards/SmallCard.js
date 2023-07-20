@@ -30,8 +30,6 @@ export default function SmallCard({
         <Tilt
           className="h-full w-full overflow-hidden rounded-[10px] shadow-md transition-all hover:shadow-xl"
           perspective={1500}
-          // glareEnable={true}
-          glareMaxOpacity={0.45}
           scale={1.02}
         >
           <span
