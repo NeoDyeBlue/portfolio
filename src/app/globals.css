@@ -38,3 +38,13 @@ html.dark-mode {
   -webkit-text-stroke: 1px #fafafa;
   text-stroke: 1px #fafafa;
 }
+
+.text-stroke-light-thin {
+  -webkit-text-stroke: 0.75px #050505;
+  text-stroke: 0.75px #050505;
+}
+
+.text-stroke-dark-thin {
+  -webkit-text-stroke: 0.75px #fafafa;
+  text-stroke: 0.75px #fafafa;
+}

@@ -42,11 +42,11 @@ export default function About() {
         </p>
       </div>
       <div
-        className="relative hidden aspect-square h-full max-h-[240px] w-full max-w-[240px] border-y border-gray-300 before:absolute before:left-0
-        before:top-0 before:hidden before:h-[1px] before:w-[65%] before:bg-gray-300 dark:border-cod-gray-700 before:dark:bg-cod-gray-700 md:block md:max-h-[320px] md:max-w-[320px] lg:border-t-0 lg:before:block"
+        className="relative flex w-full items-center justify-center border-y border-gray-300 before:absolute before:left-0
+        before:top-0 before:hidden before:h-[1px] before:w-[65%] before:bg-gray-300 dark:border-cod-gray-700 before:dark:bg-cod-gray-700 lg:border-t-0 lg:before:block"
       >
         <Canvas
-          className="h-full w-full"
+          className="aspect-square h-full w-full 540px:max-h-[320px] 540px:max-w-[320px]"
           onPointerOver={() => setIsHovered(true)}
           onPointerOut={() => setIsHovered(false)}
         >

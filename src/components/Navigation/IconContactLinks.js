@@ -13,8 +13,8 @@ export default function IconContactLinks() {
   return (
     <div
       aria-label="links list"
-      className="mt-10 flex h-[44px] w-full items-center justify-between gap-6 rounded-full border border-gray-300
-  px-6 dark:border-cod-gray-800 md:absolute md:bottom-0 md:right-0 md:w-fit md:justify-normal lg:relative"
+      className="mt-10 flex w-full flex-wrap items-center justify-between gap-3 rounded-full border border-gray-300 px-3 py-3 dark:border-cod-gray-800
+  320px:gap-6 320px:px-6 md:absolute md:bottom-0 md:right-0 md:w-fit md:justify-normal lg:relative"
     >
       <IconContactLink
         link={links.facebook}

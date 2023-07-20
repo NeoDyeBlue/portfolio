@@ -19,6 +19,7 @@ const openSans = Open_Sans({
   display: "swap",
 });
 import Link from "next/link";
+import Logo from "@/components/Logo";
 
 export const metadata = {
   title: "John Paul Zoleta | Web Developer",
@@ -41,9 +42,10 @@ export default function RootLayout({ children }) {
             ></div> */}
             <Navbar />
             <div
-              className="relative top-0 flex w-full flex-col gap-4 lg:sticky 
+              className="relative top-0 flex w-full flex-col gap-8 lg:sticky 
               lg:h-screen lg:max-w-[480px] lg:justify-between lg:py-12"
             >
+              <Logo />
               <HeroText />
               <ul className="hidden flex-col gap-4 uppercase lg:flex">
                 <li className="w-fit">

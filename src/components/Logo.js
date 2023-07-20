@@ -1,17 +1,25 @@
-import Image from "next/image";
+"use client";
+
+import classNames from "classnames";
+import { useTheme } from "next-themes";
 
 export default function Logo() {
+  const { theme } = useTheme();
   return (
-    // <Image
-    //   src={"/logo.svg"}
-    //   alt="logo"
-    //   height={60}
-    //   width={60}
-    //   className="h-[60px] w-[60px] overflow-hidden rounded-full border border-black bg-white"
-    // />
-    <div className="relative flex h-[60px] w-[60px] overflow-hidden bg-black dark:bg-white">
-      <p className="absolute -bottom-[15px] -right-[5px] font-display text-6xl text-white dark:text-black">
+    <div className="flex h-[50px] items-center lg:h-fit">
+      <p className="font-display text-2xl font-extrabold">
+        {/* <span className="font-light text-gray-300 dark:text-cod-gray-800">
+          /
+        </span> */}
         JP
+        <span
+          className={classNames("text-[calc(1.5rem-0.75px)] text-transparent", {
+            "text-stroke-dark-thin": theme == "dark",
+            "text-stroke-light-thin": theme !== "dark",
+          })}
+        >
+          Z
+        </span>
       </p>
     </div>
   );
