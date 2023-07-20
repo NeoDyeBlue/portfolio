@@ -20,12 +20,12 @@ export default function Navigation() {
   }
 
   return (
-    <div className="fixed left-0 top-0 z-50 flex w-full justify-end gap-10 p-6 lg:p-12">
+    <div className="fixed right-6 top-6 z-50 flex w-fit justify-end gap-10 lg:right-12 lg:top-12">
       <button
         className={classNames(
           `relative z-10 flex w-fit flex-col items-center
-           rounded-full border border-black bg-white p-2
-        text-black dark:border-white dark:bg-cod-gray-950 dark:text-white`
+           rounded-full border border-gray-300 bg-white p-2
+        text-black dark:border-cod-gray-800 dark:bg-cod-gray-950 dark:text-white`
         )}
       >
         <div className="flex items-center gap-2">

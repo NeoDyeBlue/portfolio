@@ -23,27 +23,32 @@ export default function SmallCard({
           images={otherImages}
         />
       ) : null}
-      <button
-        onClick={() => setShowCarousel(true)}
-        className="group relative box-border h-full w-full max-w-[300px] cursor-pointer overflow-visible rounded-[15px] border border-gray-300 bg-clip-padding
-        p-3 transition-all hover:border-black dark:border-cod-gray-700 dark:hover:border-white"
+      <div
+        className="relative h-full w-full max-w-[300px] overflow-visible rounded-[15px] border border-gray-300
+        p-3 transition-colors dark:border-cod-gray-700 md:p-4"
       >
         <Tilt
-          // className="parallax-effect-glare-scale"
+          className="h-full w-full overflow-hidden rounded-[10px] shadow-md transition-all hover:shadow-xl"
           perspective={1500}
-          glareEnable={true}
+          // glareEnable={true}
           glareMaxOpacity={0.45}
           scale={1.02}
         >
-          <Image
-            src={image}
-            alt="project image"
-            width={1250}
-            height={720}
-            className="h-auto w-full rounded-[10px] shadow-md transition-transform group-hover:scale-[1.05]"
-          />
+          <span
+            role="button"
+            className="h-full w-full"
+            onClick={() => setShowCarousel(true)}
+          >
+            <Image
+              src={image}
+              alt="project image"
+              width={1250}
+              height={720}
+              className="h-auto w-full object-cover"
+            />
+          </span>
         </Tilt>
-      </button>
+      </div>
       <div className="flex flex-col gap-3">
         <p className="font-display text-xl font-bold italic">{name}</p>
         <div className="flex flex-wrap gap-2">

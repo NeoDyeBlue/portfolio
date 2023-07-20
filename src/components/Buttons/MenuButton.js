@@ -8,25 +8,25 @@ export default function MenuButton({ isOpen = false, onClick = () => {} }) {
     >
       <div
         className={classNames(
-          "h-[1px] w-[20px] origin-left rounded-full bg-black transition-transform dark:bg-white",
+          "h-[1px] w-[20px] origin-center rounded-full bg-black transition-transform dark:bg-white",
           {
-            "rotate-[42deg]": isOpen,
+            "translate-y-[0.22rem] rotate-[40deg]": isOpen,
           }
         )}
       ></div>
-      <div
+      {/* <div
         className={classNames(
           "h-[1px] w-[20px] origin-left rounded-full bg-black transition-opacity dark:bg-white",
           {
             "opacity-0": isOpen,
           }
         )}
-      ></div>
+      ></div> */}
       <div
         className={classNames(
-          "h-[1px] w-[20px] origin-left rounded-full bg-black transition-transform dark:bg-white",
+          "h-[1px] w-[20px] origin-center rounded-full bg-black transition-transform dark:bg-white",
           {
-            "-rotate-[42deg]": isOpen,
+            "-translate-y-[0.22rem] -rotate-[40deg]": isOpen,
           }
         )}
       ></div>

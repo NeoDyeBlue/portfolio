@@ -16,30 +16,29 @@ export default function LargeCard({
 }) {
   return (
     <div className="flex flex-col gap-4">
-      <Link
-        href={link}
-        target="_blank"
-        className="group relative box-border overflow-visible rounded-[20px] border border-gray-300
-        bg-clip-padding p-6 transition-all hover:border-black dark:border-cod-gray-700 dark:hover:border-white md:p-8"
+      <div
+        className="relative h-full w-full overflow-visible rounded-[20px] border border-gray-300
+        p-6 transition-all dark:border-cod-gray-700 md:p-8"
       >
         <Tilt
-          // className="parallax-effect-glare-scale"
-          tiltReverse
-          perspective={1500}
-          glareEnable={true}
+          className="overflow-hidden rounded-[15px] shadow-md transition-all hover:shadow-xl"
+          perspective={2500}
+          // glareEnable={true}
           glareMaxOpacity={0.45}
           scale={1.02}
         >
-          <Image
-            src={image}
-            alt="project image"
-            width={1250}
-            height={720}
-            className="z-20 h-auto w-full -rotate-6 rounded-[15px] object-cover shadow-lg transition-transform group-hover:rotate-0"
-            // fill
-          />
+          <Link href={link} target="_blank">
+            <Image
+              src={image}
+              alt="project image"
+              width={1250}
+              height={720}
+              className="h-auto w-full object-cover"
+              // fill
+            />
+          </Link>
         </Tilt>
-      </Link>
+      </div>
       <div className="flex flex-wrap gap-2">
         {techs.map((tech, index) => (
           <TechBadge key={index} text={tech} />

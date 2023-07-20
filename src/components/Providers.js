@@ -18,7 +18,7 @@ export default function Providers({ children }) {
   }
   return (
     <ThemeProvider attribute="class">
-      <AnimatedCursor
+      {/* <AnimatedCursor
         innerSize={10}
         outerSize={45}
         innerScale={1}
@@ -35,7 +35,7 @@ export default function Providers({ children }) {
           mixBlendMode: "exclusion",
           zIndex: 999,
         }}
-      />
+      /> */}
       {children}
     </ThemeProvider>
   );

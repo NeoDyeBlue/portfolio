@@ -3,7 +3,7 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
-import { Cross } from "@phosphor-icons/react";
+import { X } from "@phosphor-icons/react";
 import { RemoveScroll } from "react-remove-scroll";
 import classNames from "classnames";
 import { useRef, useEffect, useState } from "react";
@@ -129,7 +129,7 @@ export default function ImageCarousel({
               {selectedItem + 1} of {images.length}
             </p>
             <button className="self-end" onClick={onClose}>
-              <Cross weight="light" size={32} />
+              <X weight="light" size={32} />
             </button>
           </div>
         </div>
