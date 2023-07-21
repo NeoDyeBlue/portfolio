@@ -39,7 +39,9 @@ export default function Works() {
         </div>
       </div>
       <div className="flex flex-col gap-10">
-        <p className="font-display text-3xl font-extrabold uppercase">More</p>
+        <p className="flex h-[50px] w-fit items-center border-y border-gray-300 font-display text-2xl font-extrabold uppercase dark:border-cod-gray-800">
+          More works
+        </p>
         <div className="flex flex-col gap-10">{smallCards}</div>
       </div>
     </div>
