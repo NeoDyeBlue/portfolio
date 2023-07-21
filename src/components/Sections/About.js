@@ -1,24 +1,11 @@
 "use client";
 
-import { Canvas, useThree, useFrame } from "@react-three/fiber";
-import { Environment, OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
 import { JPText } from "../3dModels";
-import { Vector3 } from "three";
 import { useState } from "react";
-
-function Rig() {
-  const { camera, mouse } = useThree();
-  const vec = new Vector3();
-
-  return useFrame(() => {
-    camera.position.lerp(vec.set(mouse.x, mouse.y, camera.position.z), 0.05);
-    camera.lookAt(0, 0, 0);
-  });
-}
 
 export default function About() {
   const [hovered, setIsHovered] = useState(false);
-  // const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   return (
     <div
@@ -51,10 +38,8 @@ export default function About() {
           onPointerOut={() => setIsHovered(false)}
         >
           <ambientLight intensity={2} />
-          {/* <OrbitControls enableZoom={false} /> */}
-          {/* <Environment preset="sunset" /> */}
+
           <JPText isHovered={hovered} />
-          {/* <Rig /> */}
         </Canvas>
       </div>
     </div>
