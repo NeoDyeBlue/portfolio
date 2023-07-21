@@ -17,11 +17,11 @@ export default function LargeCard({
   return (
     <div className="flex flex-col gap-4">
       <div
-        className="relative h-full w-full overflow-visible rounded-[20px] border border-gray-300
-        p-6 transition-all dark:border-cod-gray-700 md:p-8"
+        className="relative h-full w-full overflow-visible rounded-[15px]  border border-gray-300 p-4
+        transition-all dark:border-cod-gray-700 md:rounded-[20px] md:p-8"
       >
         <Tilt
-          className="overflow-hidden rounded-[15px] shadow-md transition-all hover:shadow-xl"
+          className="overflow-hidden rounded-[10px] shadow-md transition-all hover:shadow-xl md:rounded-[15px]"
           perspective={2500}
           scale={1.02}
         >

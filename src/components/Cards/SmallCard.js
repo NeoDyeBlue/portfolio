@@ -24,11 +24,11 @@ export default function SmallCard({
         />
       ) : null}
       <div
-        className="relative h-full w-full max-w-[300px] overflow-visible rounded-[15px] border border-gray-300
-        p-3 transition-colors dark:border-cod-gray-700 md:p-4"
+        className="relative h-full w-full max-w-[300px] overflow-visible rounded-[10px] border border-gray-300 p-2
+        transition-colors dark:border-cod-gray-700 md:rounded-[15px] md:p-4"
       >
         <Tilt
-          className="h-full w-full overflow-hidden rounded-[10px] shadow-md transition-all hover:shadow-xl"
+          className="h-full w-full overflow-hidden rounded-[5px] shadow-md transition-all hover:shadow-xl md:rounded-[10px]"
           perspective={1500}
           scale={1.02}
         >

@@ -34,7 +34,7 @@ export default function Works() {
         >
           works
         </p>
-        <div className="relative -mt-3 flex flex-col gap-10 md:-mt-4 md:gap-16">
+        <div className="relative -mt-3 flex flex-col gap-12 md:-mt-4 md:gap-16">
           {largeCards}
         </div>
       </div>
