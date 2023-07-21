@@ -7,7 +7,7 @@ export default function ContactLink({ name = "", link = "" }) {
         href={link}
         target="_blank"
         type="type"
-        className="text-xl hover:underline"
+        className="text-lg hover:underline"
       >
         {name}
       </Link>
