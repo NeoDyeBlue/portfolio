@@ -3,9 +3,9 @@ import { ThemeProvider } from "next-themes";
 import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 
-const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
-  ssr: false,
-});
+// const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
+//   ssr: false,
+// });
 
 export default function Providers({ children }) {
   const [mounted, setMounted] = useState(false);
@@ -17,7 +17,7 @@ export default function Providers({ children }) {
     return <>{children}</>;
   }
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider attribute="class" defaultTheme="light">
       {/* <AnimatedCursor
         innerSize={10}
         outerSize={45}
