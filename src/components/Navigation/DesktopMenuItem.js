@@ -11,7 +11,7 @@ export default function DesktopMenuItem({
       <Link
         href={href}
         className={classNames(
-          "flex w-fit items-center transition-colors",
+          "flex w-fit items-center text-sm transition-colors",
           {
             "gap-3 font-bold italic text-black dark:text-white": isActive,
           },
