@@ -10,7 +10,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="flex flex-col-reverse gap-4 md:flex-row md:gap-8 md:pt-12"
+      className="flex flex-col-reverse gap-4 md:flex-row md:gap-6 md:pt-0 lg:gap-8 lg:pt-8 xl:pt-12"
     >
       <div className="flex h-full w-full flex-col gap-6 leading-7">
         <p>
@@ -30,7 +30,7 @@ export default function About() {
       </div>
       <div
         className="relative flex w-full items-center justify-center border-y border-gray-300 before:absolute before:left-0
-        before:top-0 before:hidden before:h-[1px] before:w-[65%] before:bg-gray-300 dark:border-cod-gray-700 before:dark:bg-cod-gray-700 lg:border-t-0 lg:before:block"
+        before:top-0 before:hidden before:w-[65%] before:border-t before:border-gray-300 dark:border-cod-gray-700 before:dark:border-cod-gray-700 lg:border-t-0 lg:before:block"
       >
         <Canvas
           className="aspect-square h-full w-full 540px:max-h-[320px] 540px:max-w-[320px]"

@@ -84,12 +84,10 @@ module.exports = {
       screens: {
         "320px": "320px",
         "540px": "540px",
+        xl: "1200px",
       },
-      text: {
-        stroke: {
-          light: "-webkit-text-stroke: 1px #050505",
-          dark: "-webkit-text-stroke: 1px #fafafa",
-        },
+      fontSize: {
+        vw: "max(4.5vw,4rem)",
       },
     },
   },

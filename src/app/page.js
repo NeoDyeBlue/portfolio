@@ -21,7 +21,7 @@ export default function Main() {
   );
 
   return (
-    <main className="relative flex min-h-[200vh] flex-col gap-20">
+    <main className="relative flex min-h-[200vh] w-full flex-col gap-20">
       <div ref={sectionElementRefs[0]}>
         <About />
       </div>
