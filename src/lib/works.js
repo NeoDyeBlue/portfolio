@@ -19,7 +19,7 @@ const deployedWorks = [
     name: "Simply Weather",
     description: "Display current weather on a location with visualization",
     mainImage:
-      "https://res.cloudinary.com/dppgyhery/image/upload/v1688033458/my-portfolio/project-images/simply_weather/main_o1e0an.png",
+      "https://res.cloudinary.com/dppgyhery/image/upload/v1690111902/my-portfolio/project-images/simply_weather/Screenshot_1299_pqmreb.png",
     link: "https://openweather-api-simple-weather-app.neodyeblue.repl.co/",
     techs: ["HTML", "CSS/SCSS", "JavaScript"],
   },
