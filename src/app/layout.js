@@ -32,21 +32,21 @@ export default function RootLayout({ children }) {
         <body className={classNames(openSans.variable, raleway.variable)}>
           <main
             className={classNames(
-              "relative mx-auto flex flex-col gap-10 p-6 md:pb-0 lg:flex-row lg:gap-12 lg:px-12 lg:py-0"
+              "relative mx-auto flex flex-col gap-10 p-6 md:pb-0 lg:flex-row lg:gap-8 lg:px-8 lg:py-0 xl:gap-12 xl:px-12"
             )}
           >
             <Navbar />
             <div
               className="relative top-0 flex w-full flex-col gap-8 lg:sticky 
-              lg:h-screen lg:max-w-[480px] lg:justify-between lg:py-12"
+              lg:h-screen lg:max-w-fit lg:justify-between lg:py-8 xl:py-12"
             >
               <Logo />
               <HeroText />
               <DesktopMenu />
               <IconContactLinks />
             </div>
-            <div className="lg:sticky lg:top-0 lg:h-screen lg:py-12">
-              <div className="h-[1px] w-full bg-gray-300 dark:bg-cod-gray-800 lg:h-full lg:w-[1px]" />
+            <div className="lg:sticky lg:top-0 lg:h-screen lg:py-8 xl:py-12">
+              <div className="h-[1px] w-full border-t border-gray-300 dark:border-cod-gray-800 lg:h-full lg:border-r lg:border-t-0" />
             </div>
             {/* <hr className="border-gray-300 dark:border-cod-gray-800"></hr> */}
             {children}

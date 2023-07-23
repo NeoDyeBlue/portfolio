@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="relative flex h-[calc(100vh-3rem)] flex-col gap-6 md:h-[calc(100vh-3rem-1px)] lg:pb-12"
+      className="md: relative flex h-[calc(100vh-3rem-1px)] flex-col gap-6 md:h-[calc(100vh-1.5rem-1px)] md:pb-6 lg:h-[calc(100vh-2rem-1px)] lg:pb-8 xl:h-[calc(100vh-3rem-1px)] xl:pb-12"
     >
       <div className="flex h-[50px] w-fit flex-shrink-0 items-center border-y border-gray-300 dark:border-cod-gray-800">
         <p className="font-display text-2xl font-extrabold uppercase">
