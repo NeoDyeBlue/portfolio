@@ -16,16 +16,17 @@ export default function About() {
         <p>
           Hi there, I&apos;m John Paul Zoleta a passionate web developer. During
           my early years in Computer Science, I practiced coding and designing
-          through game development and static web pages. I also gained
-          experience from an internship and other projects. Now I&apos;m focused
-          on <span className="font-bold italic">React</span> and{" "}
-          <span className="font-bold italic">Next.js</span> for creating
-          responsive and neat websites.
+          through game development and static web pages. Experienced with web
+          technologies such as <span className="font-bold italic">Laravel</span>{" "}
+          and <span className="font-bold italic">Next.js</span>. focused on{" "}
+          <span className="font-bold italic">React</span> for the frontend and{" "}
+          <span className="font-bold italic">relational databases</span> for
+          data persistence.
         </p>
         <p>
-          I am a nature lover and I usually do my exhausting but fun grind in{" "}
-          <span className="font-bold italic">Genshin Impact</span> during my
-          free time.
+          I love open-world games as a past time and I usually do my exhausting
+          but fun grind in{" "}
+          <span className="font-bold italic">Genshin Impact</span>.
         </p>
       </div>
       <div
