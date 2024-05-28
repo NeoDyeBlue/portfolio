@@ -14,17 +14,16 @@ export default function About() {
     >
       <div className="flex h-full w-full flex-col gap-6 leading-7">
         <p>
-          Hi there, I&apos;m John Paul Zoleta a passionate web developer. During
-          my early years in Computer Science, I practiced coding and designing
-          through game development and static web pages. Experienced with web
-          technologies such as <span className="font-bold italic">Laravel</span>{" "}
-          and <span className="font-bold italic">Next.js</span>. focused on{" "}
-          <span className="font-bold italic">React</span> for the frontend and{" "}
-          <span className="font-bold italic">relational databases</span> for
-          data persistence.
+          Hi there, I&apos;m John Paul Zoleta, a passionate web developer.
+          During my early years in Computer Science, I practiced coding and
+          designing through game development and static web pages. Experienced
+          with web technologies such as{" "}
+          <span className="font-bold italic">Laravel</span>,{" "}
+          <span className="font-bold italic">Next.js</span>, and{" "}
+          <span className="font-bold italic">React</span> for the front end.
         </p>
         <p>
-          I love open-world games as a past time and I usually do my exhausting
+          I love open-world games as a pastime, and I usually do my exhausting
           but fun grind in{" "}
           <span className="font-bold italic">Genshin Impact</span>.
         </p>
