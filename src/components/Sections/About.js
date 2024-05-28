@@ -20,7 +20,8 @@ export default function About() {
           with web technologies such as{" "}
           <span className="font-bold italic">Laravel</span>,{" "}
           <span className="font-bold italic">Next.js</span>, and{" "}
-          <span className="font-bold italic">React</span> for the front end.
+          <span className="font-bold italic">React</span> for the front end, I
+          was able to create neat and functional web apps.
         </p>
         <p>
           I love open-world games as a pastime, and I usually do my exhausting
